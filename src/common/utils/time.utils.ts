@@ -1,5 +1,7 @@
+// 转换 时间字符串为毫秒
+export type TimerUnit = 's' | 'm' | 'h' | 'd';
 export function convertTimerToMs(timer: string) {
-  const unit = timer.slice(-1); // 获取时间单位
+  const unit: TimerUnit = timer.slice(-1) as TimerUnit; // 获取时间单位
   const timerInSec = timer.replace(unit, ''); // 获取时间值
   const value = Number(timerInSec);
   switch (unit) {
