@@ -6,6 +6,7 @@ import { UserModule } from './modules/user/user.module';
 import { RolesModule } from './modules/role/roles.module';
 import { MenuModule } from './modules/menu/menu.module';
 import { AuthModule } from './modules/auth/auth.module';
+import { UploadModule } from './modules/upload/upload.module';
 import TypeOrmConfigModule from '@/config/DB/TypeOrmConfig';
 import PinoLoggerModule from '@/config/Logger/PinoLogger';
 import { RedisModule } from '@/config/Redis/redis.module';
@@ -21,6 +22,7 @@ import { RedisModule } from '@/config/Redis/redis.module';
     UserModule,
     RolesModule,
     MenuModule,
+    UploadModule,
   ],
   controllers: [AppController],
   providers: [AppService,Logger],
